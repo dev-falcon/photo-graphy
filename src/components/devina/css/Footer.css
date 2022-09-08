@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.footer-heading-devi {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.footer-main-heading-devi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-indent: 20px;
+}
+.footer-heading-2-devi {
+  font-size: 70px;
+  margin-top: 10px;
+  font-family: "Artifact", sans-serif;
+}
+.footer-heading-3-devi {
+  font-family: "Futura LT", sans-serif;
+  font-size: 60px;
+}
+.footer-button-devi {
+  text-align: center;
+  margin-top: 10px;
+}
+.lets-chat-devi {
+  color: white;
+  background-color: black;
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+}
+.insta-follow-devi {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  margin-top: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-images-devi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-indent: 12px;
+  margin-top: 14px;
+}
+.shri-button-devi {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 120px;
+}
+.shri-shri-button-devi {
+  color: black;
+  background-color: white;
+  border: none;
+  font-family: "Inter", sans-serif;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+}
+
+.footer-copyright-devi {
+  display: flex;
+  align-items:center;
+  justify-content:space-evenly;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+}
+.icons-devi{
+  display: flex;
+}
+
+
+
+.xyz{
+  margin-right: 20px;
+}
+
+@media screen and (max-width:1433px) {
+  .footer-images-devi{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:1327px) {
+  .image-4-devi{
+    display: none;
+  }
+  .shri-shri-button-devi{
+   margin-left: 250px;
+   margin-bottom: 120px;
+  }
+  .footer-copyright-devi{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:995px) {
+ .footer-heading-devi{
+  font-size: 20px;
+ }
+ .footer-heading-2-devi{
+  font-size: 40px;
+ }
+ .footer-heading-3-devi{
+  font-size: 20px;
+ }
+ .lets-chat-devi{
+  font-size: 25px;
+ }
+ .insta-follow-devi{
+  font-size: 20px;
+ }
+  
+ 
+  .image-4-devi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10px 10px;
+
+  }
+  .shri-shri-button-devi{
+    display:flex;
+    margin-left: 400px;
+  }
+  
+}
+
+@media screen and (max-width:988px) {
+  .image-4-devi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10px 10px;
+
+  }
+  .shri-shri-button-devi{
+    display:flex;
+    margin-left: 400px;
+  }
+  
+}
+@media screen and (max-width:935px) {
+  .image-4-devi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10px 10px;
+
+  }
+  .shri-shri-button-devi{
+    display:flex;
+    margin-left: 400px;
+  }
+  
+}
+@media screen and (max-width:924px) {
+  .image-4-devi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10px 10px;
+
+  }
+  .shri-shri-button-devi{
+    display:flex;
+    margin-left: 350px;
+  }
+  
+}
+
+@media screen and (max-width:889px) {
+  .image-4-devi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10px 10px;
+
+  }
+  .shri-shri-button-devi{
+    display:flex;
+    margin-left: 350px;
+  }
+ .footer-images-devi{
+  margin-bottom: 80px;
+ }
+  
+}
+@media screen and (max-width:807px) {
+  .image-4-devi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10px 10px;
+
+  }
+  .shri-shri-button-devi{
+    display:flex;
+    margin-left: 350px;
+  }
+ 
+}
+@media screen and (max-width:764px) {
+  .image-4-devi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10px 10px;
+
+  }
+  .shri-shri-button-devi{
+    display:flex;
+    margin-left: 300px;
+  }
+  
+}
+@media screen and (max-width:760px) {
+  .footer-heading-devi {
+    font-size: 20px;
+  }
+  .footer-heading-2-devi{
+    font-size: 60px;
+  }
+  .footer-heading-3-devi{
+    font-size: 30px;
+  }
+  .lets-chat-devi{
+    font-size: 30px;
+  }
+  .insta-follow-devi{
+    font-size: 24px;
+  }
+  .footer-copyright-devi{
+    display: flex;
+    flex-direction:column;
+  }
+  .footer-copyright-devi p{
+    font-size: 20px;
+    text-align: center;
+  }
+  .footer-images-devi{
+   display: inline-block;
+  }
+  .shri-shri-button-devi{
+    display: none;
+  }
+}
+@media screen and (max-width:414px){
+  .footer-heading-devi{
+    font-size: 10px;
+  }
+  .footer-heading-2-devi{
+    font-size: 30px;
+  }
+  .footer-heading-3-devi{
+    font-size: 20px;
+  }
+  .lets-chat-devi{
+    font-size: 20px;
+  }
+  .insta-follow-devi{
+    font-size: 20px;
+  }
+  .footer-copyright-devi{
+    display: flex;
+    flex-direction:column;
+  }
+  .footer-copyright-devi p{
+    font-size: 20px;
+    text-align: center;
+  }
+  .footer-images-devi{
+   display: inline-block;
+  }
+  .shri-shri-button-devi{
+    display: none;
+  }
+}
