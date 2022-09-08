@@ -2,6 +2,17 @@ import React from 'react'
 import "../css/Drawer.css"
 import ham from "../images/ham.png"
 
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Routes
+} from "react-router-dom";
+import Wedding from '../wedding/Wedding';
+import Photos from '../../lavisha/lavisha-jsx/Photos';
+import Addcom from '../../lavisha/lavisha-jsx/another/Addcom';
+import About_us from '../../devina/devina-jsx/About_us';
+
 
 const Drawer = ({ isOpen, toggleDrawer, drawer, offDrawer }) => {
     return (
@@ -41,9 +52,14 @@ const Drawer = ({ isOpen, toggleDrawer, drawer, offDrawer }) => {
                </h2>
             </div>
 
+            <Router>
+
+
 <ul className="main-nav-ul">
     <li className="main-nav-li category">
-            category
+            <Link to="category">
+                Category
+            </Link>
 
             <ul className="inner-ul">
             
@@ -59,17 +75,51 @@ const Drawer = ({ isOpen, toggleDrawer, drawer, offDrawer }) => {
     </li>
 
     <li className="main-nav-li">
-        city
+        <Link to="/city">
+            City
+        </Link>
         </li>
 
         <li className="main-nav-li">
-        about
+        <Link to="/about">
+            About
+        </Link>
         </li>
 
         <li className="main-nav-li">
-        signup/Login
+        <Link to="/signup">
+            Login/SignUP
+        </Link>
         </li>
 </ul>
+
+
+
+
+
+
+
+
+<Routes>
+                    <Route path="/about" element={<About_us />}>
+                        {/* <About_us /> */}
+                    </Route>
+                    <Route path="/city" element={<Addcom />}>
+
+                    </Route>
+                    <Route path="/" element={<Photos />}>
+
+                    </Route>
+                    <Route path="/category" element={<Wedding />}>
+
+                    </Route>
+
+
+                    {/* </Route> */}
+                </Routes>
+
+</Router>
+
 
 <div className="ham ham-open">
                 <img src={ham} alt="ham" onClick={toggleDrawer} />

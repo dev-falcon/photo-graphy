@@ -12,6 +12,7 @@
 
 .Navbar{
     position: relative;
+    margin-bottom: 2rem;
     
 
 }
@@ -83,6 +84,7 @@
 .category:hover > ul{
 
     display: inherit;
+    z-index: 999;
 
 }
 .inner-ul{

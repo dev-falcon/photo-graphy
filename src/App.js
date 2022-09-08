@@ -29,7 +29,7 @@ function App() {
       {/* <About_us /> */}
 
       {/* <Photos /> */}
-      <Addcom />
+      {/* <Addcom /> */}
       <Footer />
 
     </>
