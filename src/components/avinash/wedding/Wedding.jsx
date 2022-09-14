@@ -3,15 +3,15 @@ import "./Wedding.css"
 
 // Wedding photography
 
-        import wedding_1 from "../images/wedding-1.png";
+import wedding_1 from "../images/wedding-1.png";
 
-        import wedding_2 from "../images/wedding-2.png";
+import wedding_2 from "../images/wedding-2.png";
 
-        import wedding_3 from "../images/wedding-3.png";
+import wedding_3 from "../images/wedding-3.png";
 
-        import wedding_4 from "../images/wedding-4.png";
+import wedding_4 from "../images/wedding-4.png";
 
-        import wedding_5 from "../images/wedding-5.png";
+import wedding_5 from "../images/wedding-5.png";
 
 
 
@@ -26,6 +26,8 @@ import Slider from './Categories/Slider';
 
 
 
+import {  Deluxe,Elegent, Royal, Elegent_opt, Royal_opt, Deluxe_opt, Wedding_price} from "./Categories/Wedding_catg"
+
 
 
 
@@ -33,49 +35,49 @@ function Wedding() {
     return (
         <>
 
-        <Slider />
+            <Slider />
 
 
             <div className="main-wedding-photography">
 
-            <h3 className="wedding-photography-heading">
-                Wedding Photography
-            </h3>
+                <h3 className="wedding-photography-heading">
+                    Wedding Photography
+                </h3>
 
-            
-            <div className="wedding-photography">
 
-                <div className="photography-row">
+                <div className="wedding-photography">
 
-                <img src={wedding_1} alt="" className="row-1" />
-                <img src={wedding_2} alt="" className="row-1" />
-                {/* <img src={wedding_3} alt="" className="row-1" /> */}
+                    <div className="photography-row">
+
+                        <img src={wedding_1} alt="" className="row-1" />
+                        <img src={wedding_2} alt="" className="row-1" />
+                        {/* <img src={wedding_3} alt="" className="row-1" /> */}
+
+                    </div>
+
+                    <div className="photography-row">
+
+                        <img src={wedding_3} alt="" className="row-1 " />
+                        <img src={wedding_4} alt="" className="row-2 ffst" />
+
+
+
+                    </div>
+
+                    <div className="photography-row">
+                        <img src={wedding_5} alt="" className="row-3 ssnd" />
+                    </div>
+
 
                 </div>
-
-                <div className="photography-row">
-
-                <img src={wedding_3} alt="" className="row-1 " />
-                <img src={wedding_4} alt="" className="row-2 ffst" />
-               
-
-
-                </div>
-
-                <div className="photography-row">
-                <img src={wedding_5} alt="" className="row-3 ssnd" />
-                </div>
-
 
             </div>
 
-            </div>
 
 
 
 
-
-          <Slider />
+            {/* <Slider /> */}
 
 
             {/* services section */}
@@ -108,30 +110,34 @@ function Wedding() {
 
                         <div className="card-data">
                             <ul className="ul-data">
-                                <li className="li-data">
-                                    Traditional Photo
-                                </li>
 
-                                <li className="li-data">
-                                    Traditional video
-                                </li>
+                                {
+                                    Elegent.map(packs => <li className='li-data'>
+                                        {packs}
+                                    </li>
+                                    )
+                                }
 
-                                <li className="li-data">
-                                    Candid Photography
-                                </li>
+                                <h4 className='output'>
+                                Output 
+                            </h4>
 
-                                <li className="li-data">
-                                    Wedding Video Invitation
-                                </li>
+                            {
+                                    Elegent_opt.map(packs => <li className='li-data'>
+                                        {packs}
+                                    </li>
+                                    )
+                                }
 
-                                <li className="li-data">
-                                    Full Hd Complete
-                                </li>
+
+                                
+
+
                             </ul>
                         </div>
 
                         <div className="card-priceing">
-                            <span className="price">Rs. 16000</span>
+                            <span className="price">{Wedding_price.Elegent}</span>
 
                             <button className='book-now'>Book Now</button>
                         </div>
@@ -180,34 +186,27 @@ function Wedding() {
 
                         <div className="card-data">
                             <ul className="ul-data">
-                                <li className="li-data">
-                                    Traditional Photo
-                                </li>
+                                {
+                                    Deluxe.map((pack,index) => {return <li className='li-data' key={index}>
+                                       
+                                            {pack}
+                                        </li>
+                                    })
+                                }
 
-                                <li className="li-data">
-                                    Traditional video
-                                </li>
+                                <h4 className='output'>
+                                Output 
+                            </h4>
 
-                                <li className="li-data">
-                                    Candid Photography
-                                </li>
-
-                                <li className="li-data">
-                                    Wedding Video Invitation
-                                </li>
-
-                                <li className="li-data">
-                                    Highlight
-                                </li>
-
-                                <li className="li-data">
-                                    Full HD cinematic
-                                </li>
-
-                                <li className="li-data">
-                                    Normal Highlight
-                                </li>
+                            {
+                                    Deluxe_opt.map(packs => <li className='li-data'>
+                                        {packs}
+                                    </li>
+                                    )
+                                }
                             </ul>
+
+                           
                         </div>
 
                         <div className="card-priceing">
@@ -279,37 +278,25 @@ function Wedding() {
                         </h2>
 
                         <div className="card-data">
-                            <ul className="ul-data">
-                                <li className="li-data">
-                                    Traditional Photo
-                                </li>
+                        <ul className="ul-data">
+                                {
+                                    Royal.map((packs,index) => { return <li className='li-data' key={index}>
+                                        
+                                            {packs}
+                                        </li>
+                                    })
+                                }
 
-                                <li className="li-data">
-                                    Traditional video
-                                </li>
+                                <h4 className='output'>
+                                Output 
+                            </h4>
 
-                                <li className="li-data">
-                                    Candid, Cinematic
-                                </li>
-                                <li className="li-data">
-                                    Drone
-                                </li>
-
-                                <li className="li-data">
-                                    Wedding Video Invitation
-                                </li>
-
-                                <li className="li-data">
-                                    Full Hd Complete
-                                </li>
-
-                                <li className="li-data">
-                                   Teaser & Highlight
-                                </li>
-
-                                <li className="li-data">
-                                    Story/lip dub/concept
-                                </li>
+                            {
+                                    Royal_opt.map(packs => <li className='li-data'>
+                                        {packs}
+                                    </li>
+                                    )
+                                }
                             </ul>
                         </div>
 
@@ -370,7 +357,7 @@ function Wedding() {
 
                         <img className='album-card' src={album_img} alt="" srcset="" />
 
-                         <button className='book-album'>Book Now</button>
+                        <button className='book-album'>Book Now</button>
 
                     </div>
                     <div className="album-card">

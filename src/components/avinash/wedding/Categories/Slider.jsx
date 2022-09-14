@@ -57,7 +57,7 @@ const renderCard=(card,index)=>{
 
       <div className="main-card" key={index}>
           <div className="catg-card-img">
-              <img src={card.imgPart} alt="img" srcset="" />
+              <img src={card.imgPart} alt="img" />
           </div>
 
           <div className="card-text">

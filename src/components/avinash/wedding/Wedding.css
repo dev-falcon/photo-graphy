@@ -26,6 +26,16 @@
     margin-bottom: 1rem;
  }
 
+ /* styling the output */
+ .output{
+
+    font-size: 36px;
+    margin: 30px 0;
+    margin-left: -25px;
+    
+    
+ }
+
 
  .photography-row{
     display: flex;
@@ -143,7 +153,7 @@
 
  .ul-data {
      list-style: none;
-     font-size: 40px;
+     font-size: 36px;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
  }
@@ -195,12 +205,12 @@
     
 
      .card-title{
-        font-size: 60px;
+        font-size: 28px;
 
      }
 
      .ul-data{
-        font-size: 38px;
+        font-size: 26px;
      }
 
      card-data {

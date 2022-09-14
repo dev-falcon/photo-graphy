@@ -12,6 +12,7 @@ import About_us from '../../devina/devina-jsx/About_us';
 import Addcom from '../../lavisha/lavisha-jsx/another/Addcom';
 import Photos from '../../lavisha/lavisha-jsx/Photos';
 import Wedding from '../wedding/Wedding';
+import Auth from './Auth';
 
 function Navbar({ toggleDrawer, isOpen }) {
     return (
@@ -46,13 +47,18 @@ function Navbar({ toggleDrawer, isOpen }) {
 
 
                                 <ul className="inner-ul">
-                                    <li className="inner-li">abc
+                                    <li className="inner-li">Wedding
                                     </li>
-                                    <li className="inner-li">abc
+                                    <li className="inner-li">Pre- Wedding
                                     </li>
-                                    <li className="inner-li">abc
+                                    <li className="inner-li">Enagement
                                     </li>
-                                    <li className="inner-li">abc
+                                    <li className="inner-li">Maternity
+                                    </li>
+                                    <li className="inner-li">Birthday Shoot
+                                    </li>
+
+                                    <li className="inner-li">Baby Shoot
                                     </li>
                                 </ul>
                             </li>
@@ -70,7 +76,7 @@ function Navbar({ toggleDrawer, isOpen }) {
                             </li>
 
                             <li className="main-nav-li">
-                                <Link to="/login">
+                                <Link to="/signup">
                                     Login/Signup
                                 </Link>
                             </li>
@@ -99,6 +105,10 @@ function Navbar({ toggleDrawer, isOpen }) {
 
                     </Route>
                     <Route path="/category" element={<Wedding />}>
+
+                    </Route>
+
+                    <Route path="/signup" element={<Auth />}>
 
                     </Route>
 
