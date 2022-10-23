@@ -2,9 +2,8 @@
   box-sizing: border-box;
   /* border: 1px solid red; */
 }
-body {
-  padding: 0px 40px;
-  /* border: 2px solid blue; */
+body{
+  padding: 0 !important;
 }
 .maindiv {
   width: 100%;
@@ -473,7 +472,7 @@ body {
   }
   body {
     width: 100vw;
-    padding: 0px;
+    /* padding: 0px; */
   }
   .maindiv {
     width: 100vw;

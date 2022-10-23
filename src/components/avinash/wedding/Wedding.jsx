@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Wedding.css"
 
 // Wedding photography
@@ -32,6 +32,49 @@ import {  Deluxe,Elegent, Royal, Elegent_opt, Royal_opt, Deluxe_opt, Wedding_pri
 
 
 function Wedding() {
+
+    const [Select, setSelect] = useState(0)
+
+
+    useEffect(() => {
+
+
+        
+    
+    console.log(Select);
+    
+    
+    
+    
+    
+    
+        
+    
+      
+    
+     
+    }, [Select])
+
+    // const handleClick =(para)=> {
+
+    //     if(para==="Elegent"){
+    //         setSelect(16000);
+    //         console.log(Select);
+
+    //     }
+    //     if(para==="Deluxe"){
+    //         setSelect(22000);
+    //         console.log(Select);
+
+    //     }
+    //     if(para==="Royal"){
+    //         setSelect(32000);
+    //         console.log(Select);
+
+    //     }
+    
+
+   
     return (
         <>
 
@@ -137,9 +180,18 @@ function Wedding() {
                         </div>
 
                         <div className="card-priceing">
-                            <span className="price">{Wedding_price.Elegent}</span>
+                            {/* <span className="price">{Wedding_price.Elegent_price}</span> */}
 
-                            <button className='book-now'>Book Now</button>
+                                    {
+                                        Wedding_price.map(prize => <span className='price'>
+                                           { prize.Elegent_price}
+                                        </span>)
+                                    }
+
+                          
+
+
+                            <button className='book-now' onClick={() => setSelect(16000)}>Book Now</button>
                         </div>
                     </div>
 
@@ -210,9 +262,14 @@ function Wedding() {
                         </div>
 
                         <div className="card-priceing">
-                            <span className="price">Rs. 22000</span>
+                            {/* <span className="price">Rs. 22000</span> */}
+                            {
+                                Wedding_price.map(prize=> <span className='price'>
+                                    {prize.Deluxe_price}
+                                </span>)
+                            }
 
-                            <button className='book-now'>Book Now</button>
+                            <button className='book-now' onClick={()=>setSelect(22000)}>Book Now</button>
                         </div>
                     </div>
 
@@ -301,9 +358,15 @@ function Wedding() {
                         </div>
 
                         <div className="card-priceing">
-                            <span className="price">Rs. 35000</span>
+                            {/* <span className="price">Rs. 35000</span> */}
 
-                            <button className='book-now'>Book Now</button>
+                                    {
+                                        Wedding_price.map(prize=> <span className='price'>
+                                            {prize.Royal_price}
+                                        </span> )
+                                    }
+
+                            <button className='book-now' onClick={()=>setSelect(35000)}>Book Now</button>
                         </div>
                     </div>
 
@@ -370,33 +433,7 @@ function Wedding() {
 
 
 
-                {/* <div className="album">
-                    <div className="album-img" style={{ backgroundImage: `url(${album_img})` }}>
-
-                    </div>
-                    <button className='book-album'>Book Now</button>
-
-
-                </div>
-
-                <div className="album">
-                    <div className="album-img" style={{ backgroundImage: `url(${album_img})` }}>
-
-                    </div>
-                    <button className='book-album'>Book Now</button>
-
-
-                </div>
-
-
-                <div className="album">
-                    <div className="album-img" style={{ backgroundImage: `url(${album_img})` }}>
-
-                    </div>
-                    <button className='book-album'>Book Now</button>
-
-
-                </div> */}
+            
 
             </div>
 
@@ -414,61 +451,7 @@ function Wedding() {
 
 
 
-            {/*  
-
-
-
-
-        <div className="wedding-card">
-
-            <div className="card-img">
-
-            <img src={group_1} alt="" srcset="" />
-
-            </div>
-
-        <div className="card-details">
-            <h2 className="card-title">
-                ELEGENT
-            </h2>
-
-            <div className="card-data">
-                <ul className="ul-data">
-                    <li className="li-data">
-                        Traditional Photo
-                    </li>
-
-                    <li className="li-data">
-                        Traditional Photo
-                    </li>
-
-                    <li className="li-data">
-                        Traditional Photo
-                    </li>
-
-                    <li className="li-data">
-                        Traditional Photo
-                    </li>
-
-                    <li className="li-data">
-                        Traditional Photo
-                    </li>
-                </ul>
-            </div>
-
-            <div className="card-priceing">
-                <span className="price">Rs. 16000</span>
-
-                <button className='book-now'>Book Now</button>
-            </div>
-        </div>
-
-        </div>
-
-
-
-
- */}
+    
 
 
 

@@ -13,7 +13,14 @@ import About_us from './components/devina/devina-jsx/About_us';
 // Footer
 import Footer from './components/devina/devina-jsx/Footer';
 import Addcom from './components/lavisha/lavisha-jsx/another/Addcom';
+import Payment from './components/lavisha/lavisha-jsx/Payment';
 import Photos from './components/lavisha/lavisha-jsx/Photos';
+import Main_profile from './components/user_profile/jsx/Main_profile';
+
+import Profile_part from './components/user_profile/jsx/Profile_part';
+
+import Profile_imgs from './components/user_profile/jsx/Profile_imgs';
+
 
 
 
@@ -24,12 +31,17 @@ function App() {
 
 
 
-      <Navigation />
+      {/* <Navigation /> */}
       {/* <Wedding /> */}
       {/* <About_us /> */}
 
       {/* <Photos /> */}
       {/* <Addcom /> */}
+      {/* <Payment  /> */}
+      {/* <Profile_part /> */}
+      <Main_profile  />
+
+      {/* <Profile_imgs /> */}
       <Footer />
 
     </>
