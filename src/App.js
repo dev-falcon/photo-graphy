@@ -20,6 +20,8 @@ import Main_profile from './components/user_profile/jsx/Main_profile';
 import Profile_part from './components/user_profile/jsx/Profile_part';
 
 import Profile_imgs from './components/user_profile/jsx/Profile_imgs';
+import Form_1 from './components/user_profile/jsx/Form_1';
+import Vendor_form from './components/user_profile/jsx/Vendor_form';
 
 
 
@@ -39,7 +41,10 @@ function App() {
       {/* <Addcom /> */}
       {/* <Payment  /> */}
       {/* <Profile_part /> */}
-      <Main_profile  />
+      {/* <Main_profile  /> */}
+
+      {/* <Form_1 /> */}
+      <Vendor_form  />
 
       {/* <Profile_imgs /> */}
       <Footer />
