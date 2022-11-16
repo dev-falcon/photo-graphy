@@ -37,37 +37,28 @@ const Form_2 = ({page, setpage}) => {
                 </p>
 
                 <p className="form_heading_2nd">
-                    Sign In access your Dashboard
+                   Category Photography
 
                 </p>
 
 
                 <form action="#" className='main_personal_form'>
 
-                    <input type="text" placeholder='Business Name_2' />
+                    <input type="text" placeholder='Sub Categories-1' />
 
 
-                    <input type="number" placeholder='Phone no._2' />
+                    <input type="number" placeholder='Categories-2' />
 
-                    <input type="email" placeholder='Email Address' />
+                    <input type="email" placeholder='Categories-3' />
 
-                    <input type="password" placeholder='Password' />
+                    <textarea name="" id="text_area" cols="30" rows="5" placeholder='Description...'></textarea>
 
-                    <input type="text" placeholder='Category' />
-
-                    <input type="text" placeholder='City' />
+                   
+                   
 
                     <div className="check_box_part">
 
                     
-
-                    <input type="checkbox" name="" id="" className='chkbx'/> <span>
-                        Send me email with tips on how to find target that fits the needs <br />
-                    </span>
-
-                    <input type="checkbox" name="" id="" className='chkbx' /> <span>
-                        Send me email with tips on how to find target that fits the needs
-                    </span>
 
                     </div>
 

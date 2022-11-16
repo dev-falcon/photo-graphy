@@ -45,7 +45,7 @@ const Profile_part = () => {
                 <div className="profile_right">
                     <div className="profile_picture" >
 
-                        {/* <img src={profile_img} alt="profile_img" /> */}
+                        <img src={profile_img} alt="profile_img" />
 
                     </div>
                 </div>

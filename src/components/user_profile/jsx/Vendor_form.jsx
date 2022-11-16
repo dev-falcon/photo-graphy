@@ -1,21 +1,38 @@
 import React from 'react'
+
+import Box from '@mui/material/Box';
+import Stepper from '@mui/material/Stepper';
+import Step from '@mui/material/Step';
+import StepLabel from '@mui/material/StepLabel';
+
+
 import "../css/form_1.css"
 import { useState } from "react"
 import Form_1 from './Form_1';
 import Form_2 from './Form_2';
+import { color } from '@mui/system';
 
 const Vendor_form = () => {
 
-    const [page, setpage] = useState(0);
+
+    
+const steps = [
+    'Personal Information ',
+    'Professional Information ',
+    'Profile Information ',
+    'Profile Information '
+  ];
+
+    const [page, setpage] = useState(1);
 
     const FormTitle=["Personal Information ","Professional Information", "Profile Information", "Profile Information " ]
 
 
     const pageDisplay=()=>{
-        if(page==0){
+        if(page==1){
             return <Form_1 page={page} setpage={setpage}/>
         }
-        else if(page==1){
+        else if(page==2){
             return <Form_2 page={page} setpage={setpage}/>
         }
     }
@@ -29,7 +46,7 @@ const Vendor_form = () => {
     <>
 
 <div className="Form_1_upper_part">
-                <ul className="upper_part_ul">
+                {/* <ul className="upper_part_ul">
                     <li className="upper_part_li">
                         <span>1</span> Personal Information 
                     </li>
@@ -42,7 +59,29 @@ const Vendor_form = () => {
                     <li className="upper_part_li">
                     <span>4</span> Profile Information 
                     </li>
-                </ul>
+                </ul> */}
+
+
+
+
+
+
+                <Box sx={{ width: '100%' }} my={4}>
+      <Stepper activeStep={page} alternativeLabel>
+        {steps.map((label) => (
+          <Step key={label}>
+            <StepLabel style={{fontSize: "22px"}} >{label }</StepLabel>
+          </Step>
+        ))}
+      </Stepper>
+    </Box>
+
+
+
+
+
+
+
             </div>
 
 
