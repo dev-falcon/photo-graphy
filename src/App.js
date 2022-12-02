@@ -39,8 +39,8 @@ function App() {
 
       {/* <Photos /> */}
       {/* <Addcom /> */}
-      {/* <Payment  /> */}
-      <Profile_part />
+      {/* <Payment  /> } */}
+       <Profile_part />
       <Main_profile  />
 
 
