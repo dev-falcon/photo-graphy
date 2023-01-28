@@ -36,6 +36,7 @@
 .profile_left {
     display: flex;
     flex: 0.6;
+    
     flex-direction: column;
     padding-left: 5%;
     /* border: 1px solid black; */
@@ -72,7 +73,7 @@
 }
 
 .profile_picture>img {
-    width: 72%;
+    width: 68%;
 }
 
 .down_banner {
@@ -129,7 +130,13 @@
 @media screen and (min-height: 1410px) {
 
     .profile_heading {
-        font-size: 4.9em;
+        font-size: 6.9em;
+    }
+    .profile_picture>img {
+        width: 93%;
+    }
+    .profile_rating{
+        font-size: 2.5rem;
     }
 
     .profile_ul {
@@ -137,11 +144,11 @@
     }
 
     .ul_banner {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .down_banner {
-        height: 50px;
+        height: 70px;
     }
 
 
@@ -219,8 +226,11 @@
         width: 120%;
 
         display: block;
-        margin-left: auto;
+        margin-left: -3rem;
         margin-right: auto;
+    }
+    .profile_left{
+        margin: auto;
     }
 
 
@@ -240,6 +250,10 @@
         height: 40px;
     }
 
+    .ul_banner{
+        font-size: 17px;
+    }
+
 
 
 
@@ -252,6 +266,42 @@
     .li_banner {
         padding: 0 14px;
     }
+    .profile_heading {
+        font-size: 3.5rem;
+    }
+
+    .profile_picture>img {
+        width: 150%;
+        
+        margin-left: -4rem;
+        
+    }
+    .ul_banner{
+        font-size: 15px;
+    }
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 430px) {
+
+    .profile_heading {
+        font-size: 2.8rem;
+    }
+    .ul_banner{
+        font-size: 11px;
+    }
+    .profile_picture>img {
+        width: 170%;
+        
+        margin-left: -4rem;
+        
+    }
+
 
 
 }

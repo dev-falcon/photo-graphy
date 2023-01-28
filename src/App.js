@@ -40,11 +40,11 @@ function App() {
       {/* <Photos /> */}
       {/* <Addcom /> */}
       {/* <Payment  /> } */}
-       <Profile_part />
-      <Main_profile  />
+       {/* <Profile_part /> */}
+      {/* <Main_profile  /> */}
 
 
-      {/* <Vendor_form  /> */}
+      <Vendor_form  />
 
       {/* <Profile_imgs /> */}
       <Footer />

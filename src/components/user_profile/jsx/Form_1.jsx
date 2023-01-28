@@ -75,7 +75,7 @@ const Form_1 = ({page, setpage}) => {
 
                     
 
-                    <input type="submit"  onClick={()=>{setpage((currPage)=>currPage-1)}} value="Previous" className='Submit_form_button' />
+                    {/* <input type="submit"  onClick={()=>{setpage((currPage)=>currPage-1)}} value="Previous" className='Submit_form_button' /> */}
 
                     <input type="submit"  onClick={()=>{setpage((currPage)=>currPage+1)}} value="Continue"  className='Submit_form_button continue' />
 

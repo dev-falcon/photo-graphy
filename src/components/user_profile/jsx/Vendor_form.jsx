@@ -10,7 +10,9 @@ import "../css/form_1.css"
 import { useState } from "react"
 import Form_1 from './Form_1';
 import Form_2 from './Form_2';
-import { color } from '@mui/system';
+
+import Form_3 from './Form_3';
+import { Form_4 } from './Form_4';
 
 const Vendor_form = () => {
 
@@ -23,18 +25,26 @@ const steps = [
     'Profile Information '
   ];
 
-    const [page, setpage] = useState(1);
+    const [page, setpage] = useState(0);
 
     const FormTitle=["Personal Information ","Professional Information", "Profile Information", "Profile Information " ]
 
 
     const pageDisplay=()=>{
-        if(page==1){
+        if(page==0){
             return <Form_1 page={page} setpage={setpage}/>
         }
-        else if(page==2){
+        else if(page==1){
             return <Form_2 page={page} setpage={setpage}/>
         }
+        else if(page==2){
+          return <Form_3 page={page} setpage={setpage}/>
+
+      }
+      else if(page==3){
+        return <Form_4 page={page} setpage={setpage}/>
+
+    }
     }
 
 
@@ -70,7 +80,7 @@ const steps = [
       <Stepper activeStep={page} alternativeLabel>
         {steps.map((label) => (
           <Step key={label}>
-            <StepLabel style={{fontSize: "22px"}} >{label }</StepLabel>
+            <StepLabel style={{fontSize: "22px"}} >{label  }</StepLabel>
           </Step>
         ))}
       </Stepper>

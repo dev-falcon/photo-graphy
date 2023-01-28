@@ -54,12 +54,62 @@
 }
 
 
+.circular_image{
+    margin-top: 80px;
+    margin-left: 350px;
+    display: flex;
+}
+.set-y{
+    font-size: larger;
+    margin-top: 40px;
+    margin-left:410px;
+    margin-bottom:25px ;
+}
+
+.arrow {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.profo{
+    margin-top: 0px;
+      height: 130px;
+    border-radius:50%;
+    margin-left: 50px;
+}
 
 
-
-
-
-
+.rounded-sqimg{
+    margin-top: 80px;
+    margin-left: 350px;
+    
+}
+.set-i{
+    font-size: larger;
+    margin-top: 40px;
+    margin-left:410px;
+    margin-bottom:25px ;
+}
+.rounded-sqvid{
+    margin-top: 60px;
+    margin-left: 350px;
+    
+}
+.set-v{
+    font-size: larger;
+    margin-top: 20px;
+    margin-left:410px;
+    margin-bottom:25px ;
+}
+.btn1{
+    background-color: rgb(0, 170, 248);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 20px;
+    margin-left:410px;
+    margin-bottom:35px ;
+}
 
 
 
@@ -149,12 +199,10 @@ font-size: 30px !important;
     background-color: black !important;
     color: white;
     width: 30% !important;
-   
+    /* display: flex; */
+    margin-left: 1rem !important;
     font-size:22px !important ;
     border-radius: 25px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     text-align:center !important;
 
