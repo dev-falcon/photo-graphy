@@ -13,18 +13,11 @@ const CardData=[
         imgPart:bride_broom,
         // text:"The Wedding Culture "
     },
-    {
-        imgPart:group,
-        // text:" Family And Friends"
-    },
-    {
-        imgPart:Haldi,
-        text:" The Knot Ceremony"
-    },
-
-    {
-        imgPart:group,
-        text:" Just Married"
-    },
+    // {
+    //     imgPart:group,
+    //     // text:" Family And Friends"
+    // },
+   
+    
 ] ;
 export default CardData;
