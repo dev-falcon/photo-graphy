@@ -64,10 +64,11 @@ const Profile_part = () => {
             </div>
 
 
-            <BrowserRouter>
 
             <div className="down_banner">
                 <ul className='ul_banner'>
+
+
                 <li className="li_banner">
                 <span>
                     <PlaceIcon  />
@@ -86,9 +87,9 @@ const Profile_part = () => {
                     <AddToPhotosIcon />
                 </span>
 
-                    <Link to={Photos}>
+                  
                     123 photos
-                    </Link> 
+                  
 
 
                 </li>
@@ -107,11 +108,11 @@ const Profile_part = () => {
 
                 Share</li>
 
+
                 </ul>
             </div>
 
 
-            </BrowserRouter>
 
 
 
