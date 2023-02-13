@@ -2,6 +2,17 @@ import React from 'react'
 import "../css/Profile_part.css"
 import profile_img from "../Images/gm/Ellipse 15.png"
 
+import PlaceIcon from '@mui/icons-material/Place';
+import AddIcCallIcon from '@mui/icons-material/AddIcCall';
+import AddToPhotosIcon from '@mui/icons-material/AddToPhotos';
+
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+
+import ShareIcon from '@mui/icons-material/Share';
+import { BrowserRouter, Link } from 'react-router-dom';
+
+import Photos from '../jsx/Photos'
+
 const Profile_part = () => {
     return (
         <>
@@ -53,16 +64,54 @@ const Profile_part = () => {
             </div>
 
 
+            <BrowserRouter>
+
             <div className="down_banner">
                 <ul className='ul_banner'>
-                <li className="li_banner">location</li>
-                <li className="li_banner">contact</li>
-                <li className="li_banner">123 photos</li>
-                <li className="li_banner">booklist</li>
-                <li className="li_banner">Share</li>
+                <li className="li_banner">
+                <span>
+                    <PlaceIcon  />
+                </span>
+                location</li>
+                <li className="li_banner">
+                
+                <span>
+                    <AddIcCallIcon  />
+                </span>
+
+                contact</li>
+                <li className="li_banner">
+                
+                <span>
+                    <AddToPhotosIcon />
+                </span>
+
+                    <Link to={Photos}>
+                    123 photos
+                    </Link> 
+
+
+                </li>
+                <li className="li_banner">
+                
+                <span>
+                    <FavoriteBorderIcon />
+                </span>
+
+                booklist</li>
+                <li className="li_banner">
+                
+                <span>
+                    <ShareIcon  />
+                </span>
+
+                Share</li>
 
                 </ul>
             </div>
+
+
+            </BrowserRouter>
 
 
 

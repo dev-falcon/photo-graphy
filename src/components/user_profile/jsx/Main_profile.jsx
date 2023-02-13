@@ -1,10 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../css/Main_profile.css"
 import Profile_imgs from "./Profile_imgs"
+
+import cover_img from "../Images/gm/Rectangle 124.png"
+
 import profile_img from "../Images/gm/Ellipse 15.png"
-// import 'font-awesome/css/font-awesome.min.css';
+import Offers_basic from './Offers_basic'
+import Offers_standard from './Offers_standard'
+import Offers_premium from './Offers_premium'
+import Reviews from './Reviews'
+import Description from './Description'
+import { Recent_work } from './Recent_work'
+
 
 const Main_profile = () => {
+
+
+    const [Click, setClick] = useState('Basic');
+
+    // const [active, setactive] = useState("");
+
+
+
+    if(Click==='Basic'){
+
+        var btnClasses=['pricing_top_heading', 'head_one', 'active_head'];
+
+    }
+    else if(Click==='Standard'){
+
+        var btnClasses=['pricing_top_heading', 'head_tow', 'active_head'];
+
+    }
+    else if(Click==='Premium'){
+
+        var btnClasses=['pricing_top_heading', 'head_three', 'active_head'];
+
+    }
+       
+    
+
+
   return (
     <>
 
@@ -35,7 +71,11 @@ const Main_profile = () => {
 
             <div className="slider_imgs">
 
-            {/* <Profile_imgs /> */}
+            <img src={cover_img} alt=""  />
+
+
+
+
             </div>
 
 
@@ -46,50 +86,38 @@ const Main_profile = () => {
 
             <div className="pricing">
                 <div className="pricing_top">
-                    <div className="pricing_top_heading head_one active_head">
+                    <div className="pricing_top_heading head_one active_head" 
+                    onClick={()=> setClick('Basic')
+                                
+                    
+                    }>
                         Basic
                     </div>
-                    <div className="pricing_top_heading head_two">Standard</div>
-                    <div className="pricing_top_heading head_three">Premium</div>
+                    <div className="pricing_top_heading head_two"
+                    onClick={()=> setClick('Standard') 
+
+                
+
+                        }
+
+                       
+                        >
+                    Standard</div>
+                    <div className="pricing_top_heading head_three "   
+                    onClick={()=> setClick('Premium') 
+
+                    } 
+                     >Premium</div>
                 </div>
 
-                <div className="main_part_pricing">
-                   <div className="price">
+                {Click==="Basic" && <Offers_basic  /> }
+               
+                {Click==="Standard" && <Offers_standard /> }
 
-                   <span >Basic</span>
-                   <span>Rs 2,515</span>
+                {Click==="Premium" && <Offers_premium /> }
+              
 
-                   </div>
-                   <div className="price_text">
-                    <p>
-                        1-80 photos will edit using Adobe tools
-                    </p>
-                   </div>
 
-                   <div className="price_delivery">
-                   <span >2 days delivery</span>
-                   <span>1 Revison</span>
-
-                   </div>
-
-                   <ul className="checkLists">
-                    <li className="checks">Traditional Photo</li>
-                    <li className="checks">Traditional Video</li>
-                    <li className="checks">Candid Photography</li>
-                    <li className="checks">Wedding Video Invitation</li>
-                    <li className="checks">Full HD Complete</li>
-                   </ul>
-
-                   <div className="next_btns">
-                    <button className='Send_Message'>
-                            Send Message
-                    </button>
-
-                    <button className='View_Contact'>
-                            View Contact
-                    </button>
-                   </div>
-                </div>
             </div>
 
             </div>
@@ -97,6 +125,28 @@ const Main_profile = () => {
 
 
         </div>
+
+
+        <div className="basic-description">
+
+            <Description />
+        </div>
+
+
+
+
+        
+    <div className="vendor-reviews">
+        <Reviews />
+    </div>
+
+
+    <div className="recent-worl">
+        <Recent_work    />
+    </div>
+
+
+
 
 
 

@@ -1,80 +1,75 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
-import "../css/Main_profile.css"
-import CardData from "./CardData"
+import { Typography } from '@mui/material';
+import { Box } from '@mui/system';
+import React, { useContext } from 'react'
+import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+import CardData from '../../avinash/wedding/Categories/CardData'
+import RightArrowIcon from '../assets/right-arrow.png';
+import LeftArrowIcon from '../assets/left-arrow.png';
 
 
-export default class Responsive extends Component {
-  render() {
-    var settings = {
-      dots: true,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            initialSlide: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    };
 
 
-    const renderCard=(card,index)=>{
+const LeftArrow = () => {
+  const { scrollPrev } = useContext(VisibilityContext);
 
-      return(
+  return (
+    <Typography onClick={() => scrollPrev()} className="right-arrow">
+      <img src={LeftArrowIcon} alt="right-arrow" />
+    </Typography>
+  );
+};
 
-        <div className="images_part" key={index}>
+const RightArrow = () => {
+  const { scrollNext } = useContext(VisibilityContext);
 
-        <div className="single_image">
-          <img src={card.imgPart} alt="img" srcset="" />
-        </div>
+  return (
+    <Typography onClick={() => scrollNext()} className="left-arrow">
+      <img src={RightArrowIcon} alt="right-arrow" />
+    </Typography>
+  );
+};
 
-        </div>
+
+
+
+const Profile_imgs = () => {
+
+  return (
+
+    <>
+
+
+
+<ScrollMenu  LeftArrow={LeftArrow} RightArrow={RightArrow}>
+
+
+
+
+{CardData.map((item) => (
+    <Box
+        key={item.id}
+       
+        // m="0 10px"
+    >
+
+    {/* {item.imgPart } */}
 
         
 
+    </Box>
+
+))}
 
 
 
-      )
-    };
+</ScrollMenu>
+
+    </>
+  )
 
 
-
-    return (
-      <div>
-        
-        <Slider {...settings}>
-         
-
-            {CardData.map(renderCard)}
-
-
-        </Slider>
-      </div>
-    );
-  }
 }
+
+
+
+export default Profile_imgs;

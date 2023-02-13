@@ -1,74 +1,58 @@
 import React from 'react'
-import { FaFacebookF } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import img1 from "../images/pic1.png";
-import img2 from "../images/pic2.png";
-import img3 from "../images/pic3.png";
-import img4 from "../images/pic4.png";
-import { icons } from "react-icons";
-import "../css/Footer.css";
-
+import '../css/Footer.css'
 const Footer = () => {
-  return (
-    <>
-    <div className="footer-container-devi">
-  <div className="footer-heading-devi">
-    NOW ACCEPTING BOOKING !<br />
-    <div className="footer-main-heading-devi">
-      <div className="footer-heading-2-devi">SHRI</div>
-      <div className="footer-heading-3-devi">photography</div>
-    </div>
-    <div className="footer-button-devi">
-      <button className="lets-chat-devi" type="button">
-        LETS CHAT
-      </button>
-    </div>
-    <div className="insta-follow-devi">FOLLOW US ON INSTAGRAM</div>
-    <div className="footer-images-devi">
-      <div className="image-1-devi">
-        <img src={img1} alt=""  />
-      </div>
-      <div className="image-2-devi">
-        <img src={img2} alt=""  />
-      </div>
-      <div className="image-3-devi">
-        <img src={img3} alt=""  />
-      </div>
-      <div className="image-4-devi">
-        <img src={img4} alt=""  />
-      </div>
-      <div className="shri-button-devi">
-        <button className="shri-shri-button-devi" type="button">
-          @shri_photography
-        </button>
-      </div>
-      </div>
-  </div>
-  <div className="footer-copyright-icons-devi">
-    <div className="footer-copyright-devi">
-      <p> COPYRIGHT &copy; SHRI PHOTOGRAPHY</p>
-      <div className="icons-devi">
-      <a className="footer-icons-facebook-devi xyz">
-        <FaFacebookF color="#4267B2" size="30px" />
-      </a>
-      <a className="footer-icons-whatsapp-devi xyz">
-        <FaWhatsapp color="#25D366" size="30px" />
-      </a>
-      <a className="footer-icons-youtube-devi xyz">
-        <FaYoutube color="#FF0000" size="30px" />
-      </a>
-      <a className="footer-icons-instagram-devi xyz">
-        <FaInstagram color="#DD2A7B - rgb(221, 42, 123)" size="30px" />
-      </a>
-      </div>
-    </div>
-  </div>
-</div>
+    return (
+        <>
+        <div className='footer-photo'>
+            <div className='footer-devi'>
+                <div className='now-book'>
+                    NOW ACCEPTING BOOKING !
+                </div>
+                <div className='devi-category'>
+                    <ul className='category-footer'>
+                        <h1 className='heading-category'>Category</h1>
+                        <li className='category'>Cinematography</li>
+                        <li className='category'>Pre-Wedding Shots</li>
+                        <li className='category'>Candid Photography</li>
+                        <li className='category'>Wedding Photography</li>
+                    </ul>
+                    <ul className='devi-home'>
+                        <h1 className='heading-home'>Home</h1>
+                        <li className='home'>City</li>
+                        <li className='home'>About</li>
+                        <li className='home'>Category</li>
+                        <li className='home'>Signup/Login</li>
+                    </ul>
+                    <ul className='devi-support'>
+                        <h1 className='heading-supoort'>Support</h1>
+                        <li className='support'>Contact us</li>
+                        <li className='support'>Support request</li>
+                    </ul>
+                    <ul className='devi-social'>
+                        <h1 className='heading-social'>Social</h1>
+                        <li className='social'>Twitter</li>
+                        <li className='social'>Facebook</li>
+                        <li className='social'>Instagram</li>
+                        <li className='social'>Whatsapp
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div className='shri-photo-terms'>
+                    <div className='shri-photo'>
+                        2023 SHRI photography
+                    </div>
+                    <div className='shri-terms'>
+                        Terms & Conditions | Policy
+                    </div>
+                </div>
+            <div className='footer-image'>
+              <pic1/>
+            </div>
+        </>
+    )
 
-    </>
-  )
 }
 
-export default Footer;
+export default Footer
