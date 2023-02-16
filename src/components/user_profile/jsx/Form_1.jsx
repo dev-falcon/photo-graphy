@@ -11,7 +11,6 @@ const Form_1 = ({page, setpage}) => {
            
         
 
-        {/* coding the mid part */}
 
 
 
@@ -47,21 +46,21 @@ const Form_1 = ({page, setpage}) => {
                     <input type="text" placeholder='Business Name' />
 
 
-                    <input type="number" placeholder='Phone no.' />
+                    <input type="number" required placeholder='Phone no.' />
 
-                    <input type="email" placeholder='Email Address' />
+                    <input type="email"  required placeholder='Email Address' />
 
-                    <input type="password" placeholder='Password' />
+                    <input type="password" required placeholder='Password' />
 
-                    <input type="text" placeholder='Category' />
+                    <input type="text" required placeholder='Category' />
 
-                    <input type="text" placeholder='City' />
+                    <input type="text" required placeholder='City' />
 
                     <div className="check_box_part">
 
                     
 
-                    <input type="checkbox" name="" id="" className='chkbx'/> <span>
+                    <input type="checkbox" name="" id=""  className='chkbx'/> <span>
                         Send me email with tips on how to find target that fits the needs <br />
                     </span>
 

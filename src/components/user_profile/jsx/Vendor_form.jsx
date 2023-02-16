@@ -56,20 +56,7 @@ const steps = [
     <>
 
 <div className="Form_1_upper_part">
-                {/* <ul className="upper_part_ul">
-                    <li className="upper_part_li">
-                        <span>1</span> Personal Information 
-                    </li>
-                    <li className="upper_part_li">
-                    <span>2</span> Professional Information 
-                    </li>
-                    <li className="upper_part_li">
-                    <span>3</span> Profile Information 
-                    </li>
-                    <li className="upper_part_li">
-                    <span>4</span> Profile Information 
-                    </li>
-                </ul> */}
+                
 
 
 

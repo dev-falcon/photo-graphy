@@ -13,6 +13,9 @@ import Addcom from '../../lavisha/lavisha-jsx/another/Addcom';
 import Photos from '../../lavisha/lavisha-jsx/Photos';
 import Wedding from '../wedding/Wedding';
 import Auth from './Auth';
+import Main_home_page from '../../Home_page/jsx/Main_home_page';
+import Vendor_form from '../../user_profile/jsx/Vendor_form';
+import { Vendors_page } from '../../vendorPage/jsx/Vendors_page';
 
 function Navbar({ toggleDrawer, isOpen }) {
     return (
@@ -24,11 +27,17 @@ function Navbar({ toggleDrawer, isOpen }) {
                     <div className="logo-Part">
                         <h2>
                             <span className='fst-part'>
-                                Shree { }
+                                <Link to='/'>
+
+                                    Shree { }
+                                </Link>
                             </span>
                             <span className='second-part'>
 
-                                photoGraphy
+                                <Link to='/'>
+
+                                    photoGraphy
+                                </Link>
                             </span>
 
                         </h2>
@@ -39,14 +48,14 @@ function Navbar({ toggleDrawer, isOpen }) {
 
                         <ul className="main-nav-ul">
                             <li className="main-nav-li category">
-                                <Link to="/category">
-                                    category
+                                <Link to="/vendors">
+                                    Vendors
 
                                 </Link>
 
 
 
-                                <ul className="inner-ul">
+                                {/* <ul className="inner-ul">
                                     <li className="inner-li">Wedding
                                     </li>
                                     <li className="inner-li">Pre- Wedding
@@ -60,7 +69,7 @@ function Navbar({ toggleDrawer, isOpen }) {
 
                                     <li className="inner-li">Baby Shoot
                                     </li>
-                                </ul>
+                                </ul> */}
                             </li>
 
                             <li className="main-nav-li">
@@ -80,6 +89,14 @@ function Navbar({ toggleDrawer, isOpen }) {
                                     Login/Signup
                                 </Link>
                             </li>
+
+
+                            <li className="main-nav-li">
+                                <Link to="/signup_as_vendor">
+                                    Signup as Vendor
+                                </Link>
+                            </li>
+
                         </ul>
                     </div>
 
@@ -101,19 +118,27 @@ function Navbar({ toggleDrawer, isOpen }) {
                     <Route path="/city" element={<Addcom />}>
 
                     </Route>
-                    <Route path="/" element={<Photos />}>
+                    <Route path="/" element={<Main_home_page />}>
 
                     </Route>
-                    <Route path="/category" element={<Wedding />}>
+                    <Route path="/vendors" element={<Vendors_page />}>
 
                     </Route>
 
                     <Route path="/signup" element={<Auth />}>
 
+
+
+                    </Route>
+
+                    <Route path="/signup_as_vendor" element={<Vendor_form />}>
+
+
+
                     </Route>
 
 
-                    {/* </Route> */}
+                    
                 </Routes>
 
 
