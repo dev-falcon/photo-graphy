@@ -37,11 +37,17 @@ function App() {
 
 
 
-      <Navigation />
+      <Navigation />?
+
+      {/* <Main_home_page /> */}
      
     
-     
-    {/* <Photos /> */}
+    
+    {/* <Photos />  */}
+     {/* <Profile_part /> */}
+    {/* <Main_profile />  */}
+
+    
 
    
       <Footer />

@@ -6,7 +6,7 @@ import im1 from "../images/Image/im1.png";
 function Photo() {
   return (
     <div>
-      <div className="container">
+      <div className="container-lav">
         <div>
           <img className="im2" src={img19} alt=""></img>
         </div>

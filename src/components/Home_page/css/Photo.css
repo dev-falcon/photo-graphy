@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.container-lav {
   width: 75%;
   margin: 0 auto;
   display: flex;
@@ -15,7 +15,7 @@
   flex-flow: row;
 }
 .im2 {
-  height: 650px;
+  /* height: 650px; */
   background-color: aliceblue;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
   height: 500px;
   width: auto;
   display: flex;
-  margin-top: -60px;
+  margin-top: -15px;
   margin-left: 50px;
   /* border: 1px solid green; */
 }
@@ -154,11 +154,11 @@
 }
 
 @media screen and (max-width: 550px) {
-  * {
+  /* * {
     width: 100vw;
-  }
-  .container {
-    width: 100vw;
+  } */
+  .container-lav {
+    /* width: 100vw; */
     margin: 0px;
     flex-flow: column wrap;
     /* border: 1px solid blue; */

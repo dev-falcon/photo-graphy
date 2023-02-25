@@ -35,19 +35,7 @@ function Lower() {
           </div>
         </div>
       </div>
-      {/* <div className="img-gallery">
-        <img src={img11} alt=""></img>
-        <img src={img12} alt=""></img>
-
-        <img src={img13} alt=""></img>
-        <img src={img14} alt=""></img>
-
-        <img src={img15} alt=""></img>
-        <img src={img16} alt=""></img>
-
-        <img src={img17} alt=""></img>
-        <img src={img18} alt=""></img>
-      </div> */}
+    
       <div className="search">
         <button type="submit" form="form1" value="Search">
           Search more
