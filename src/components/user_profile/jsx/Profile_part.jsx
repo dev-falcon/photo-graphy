@@ -82,14 +82,21 @@ const Profile_part = () => {
 
                 contact</li>
                 <li className="li_banner">
+
+
+                
+
                 
                 <span>
                     <AddToPhotosIcon />
                 </span>
+                
 
                   
                     123 photos
+
                   
+                
 
 
                 </li>

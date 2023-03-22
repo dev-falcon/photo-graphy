@@ -26,8 +26,8 @@
 }
 
 .card__img{
-    height: 200px !important;
-    width: 350px !important;
+    height: 200px ;
+    width: 350px ;
     border-radius: 5px;
     /* border-top-left-radius: 12px; */
     object-fit: cover;
@@ -180,5 +180,19 @@ p{
     .card__info{
         padding: 20px 0 20px 20px ;
     }
+
+  }
+
+
+
+
+
+
+  @media screen and (max-width: 420px) {
+
+    .card__img{
+        width: 70vw;
+    }
+
 
   }

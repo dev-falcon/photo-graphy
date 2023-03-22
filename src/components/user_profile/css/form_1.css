@@ -2,6 +2,11 @@
     margin-top: 2rem;
 }
 
+.form-error{
+    color: red;
+    font-size: 16px;
+}
+
 .Form_1_upper_part{
 
     border-top: 1px solid black;
@@ -86,9 +91,8 @@
 }
 .personal_form_right{
     flex: 0.6;
-    margin-left: -3rem;
-    /* padding: 200px; */
-    /* padding: auto 30px 10px auto; */
+    margin-left: -1rem;
+   
     padding-right: 30px;
 }
 
@@ -122,13 +126,26 @@ font-size: 30px !important;
 }
 
 
-.main_personal_form>input{
+.main_personal_form>input,.main_personal_form_cat{
     margin: 5px;
     height: 42px;
     font-size: 16px;
     padding:10px;
     border-radius: 7px;
     border: 1px solid rgba(176, 175, 175, 0.835);
+}
+textarea{
+    margin: 5px;
+    /* height: 42px; */
+    font-size: 16px;
+    padding:10px;
+    border-radius: 7px;
+    border: 1px solid rgba(176, 175, 175, 0.835);
+}
+.main_personal_form_cat>span{
+    font-size: 16px;
+    color: rgba(42, 42, 42, 0.864);
+
 }
 
 .check_box_part{
@@ -145,10 +162,12 @@ font-size: 30px !important;
     font-size: 20px;
 }
 
+
 .Submit_form_button{
     background-color: black !important;
     color: white;
     width: 30% !important;
+    margin: 7px auto;
    
     font-size:22px !important ;
     border-radius: 25px !important;
@@ -171,6 +190,7 @@ font-size: 30px !important;
 .continue{
     background-color: white !important;
     color: black !important;
+    padding: 5px;
     border: 1px solid black !important;
 }
 
@@ -189,12 +209,19 @@ font-size: 30px !important;
         font-size: 38px;
     }
 
-    .main_personal_form>input{
+    .main_personal_form>input,.main_personal_form_cat{
         height: 52px;
         font-size: 27px;
         padding: 15px;
         margin: 10px;
     }
+
+    .main_personal_form_cat>span{
+        font-size: 17px;
+        color: rgba(42, 42, 42, 0.864);
+    
+    }
+
     input.chkbx{
         width: 20px;
         height: 20px;
@@ -226,10 +253,16 @@ font-size: 30px !important;
         font-size: 46px;
     }
 
-    .main_personal_form>input {
+    .main_personal_form>input, .main_personal_form_cat {
         height: 61px;
         font-size: 30px;
         padding: 20px;
+    }
+
+    .main_personal_form_cat>span{
+        font-size: 30px;
+        color: rgba(42, 42, 42, 0.864);
+    
     }
 
     .check_box_part{
@@ -257,10 +290,16 @@ font-size: 30px !important;
         font-size: 25px;
     }
 
-    .main_personal_form>input {
+    .main_personal_form>input,.main_personal_form_cat{
         height: 40px;
         font-size: 20px;
         padding: 8px;
+    }
+
+    .main_personal_form_cat>span{
+        font-size: 20px;
+        color: rgba(42, 42, 42, 0.864);
+    
     }
 
     .check_box_part{
@@ -296,10 +335,16 @@ font-size: 30px !important;
         font-size: 20px;
     }
 
-    .main_personal_form>input {
+    .main_personal_form>input,.main_personal_form_cat {
         height: 35px;
         font-size: 17px;
         padding: 6px;
+    }
+
+    .main_personal_form_cat>span{
+        font-size: 17px;
+        color: rgba(42, 42, 42, 0.864);
+    
     }
 
     .check_box_part{
@@ -347,10 +392,15 @@ font-size: 30px !important;
         font-size: 18px;
     }
 
-    .main_personal_form>input {
+    .main_personal_form>input,.main_personal_form_cat {
         height: 26px;
         font-size: 14px;
         padding: 2px;
+    }
+    .main_personal_form_cat>span{
+        font-size: 14px;
+        color: rgba(42, 42, 42, 0.864);
+    
     }
 
     .upper_part_ul {
@@ -380,15 +430,21 @@ font-size: 30px !important;
         font-size: 16px;
     }
 
-    .main_personal_form>input {
+    .main_personal_form>input,.main_personal_form_cat {
         height: 24px;
         font-size: 12px;
         padding: 5px;
     }
 
+    .main_personal_form_cat>span{
+        font-size: 12px;
+        color: rgba(42, 42, 42, 0.864);
+    
+    }
     .Submit_form_button{
         font-size: 14px !important;
-        padding: 0 !important;
+        padding: 5px !important;
+        
     }
     .personal_form_left>img {
         width: 80%;
@@ -458,10 +514,16 @@ font-size: 30px !important;
         font-size: 22px;
     }
 
-    .main_personal_form>input {
+    .main_personal_form>input,.main_personal_form_cat {
         height: 28px;
         font-size: 14px;
         padding: 5px;
+    }
+
+    .main_personal_form_cat>span{
+        font-size: 14px;
+        color: rgba(42, 42, 42, 0.864);
+    
     }
 
     .mid_desc {

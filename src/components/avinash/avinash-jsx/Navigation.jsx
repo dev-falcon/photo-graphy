@@ -1,6 +1,8 @@
 import React, {useState } from 'react'
-import Drawer from '../avinash-jsx/Drawer'
+import DrawerNew from '../avinash-jsx/DrawerNew'
 import Navbar from '../avinash-jsx/Navbar'
+
+
 
 function Navigation() {
 
@@ -11,10 +13,11 @@ function Navigation() {
 
     const toggleDrawer=()=>{
         setisOpen(!isOpen);
+
     }
 
     const offDrawer = ()=>{
-        setisOpen(!isOpen);
+        setisOpen(!setdrawer);
     }
 
    
@@ -24,7 +27,7 @@ function Navigation() {
   return (
     <>
 
-        {isOpen &&  <Drawer isOpen={isOpen} toggleDrawer={toggleDrawer} drawer={drawer} offDrawer={offDrawer} /> }
+        {isOpen &&  <DrawerNew isOpen={isOpen} toggleDrawer={toggleDrawer}  /> }
 
        
         <Navbar toggleDrawer={toggleDrawer} isOpen={isOpen} />

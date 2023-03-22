@@ -10,12 +10,12 @@ import {
 } from "react-router-dom";
 import About_us from '../../devina/devina-jsx/About_us';
 import Addcom from '../../lavisha/lavisha-jsx/another/Addcom';
-import Photos from '../../lavisha/lavisha-jsx/Photos';
-import Wedding from '../wedding/Wedding';
-import Auth from './Auth';
+
+import Auth from './All_auth/jsx/Auth';
 import Main_home_page from '../../Home_page/jsx/Main_home_page';
 import Vendor_form from '../../user_profile/jsx/Vendor_form';
 import { Vendors_page } from '../../vendorPage/jsx/Vendors_page';
+import Login from './All_auth/jsx/Login';
 
 function Navbar({ toggleDrawer, isOpen }) {
     return (
@@ -29,7 +29,7 @@ function Navbar({ toggleDrawer, isOpen }) {
                             <span className='fst-part'>
                                 <Link to='/'>
 
-                                    Shree { }
+                                    Shri { }
                                 </Link>
                             </span>
                             <span className='second-part'>
@@ -121,7 +121,7 @@ function Navbar({ toggleDrawer, isOpen }) {
                     <Route path="/" element={<Main_home_page />}>
 
                     </Route>
-                    <Route path="/vendors" element={<Vendors_page />}>
+                    <Route exact path="/vendors" element={<Vendors_page />}>
 
                     </Route>
 
@@ -131,7 +131,12 @@ function Navbar({ toggleDrawer, isOpen }) {
 
                     </Route>
 
-                    <Route path="/signup_as_vendor" element={<Vendor_form />}>
+                    <Route path="/signup_as_vendor"  element={<Vendor_form />}>
+
+                    </Route>
+
+                    <Route path='/Login' element={<Login />}>
+
 
 
 

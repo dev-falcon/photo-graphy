@@ -1,6 +1,9 @@
 
 import './App.css';
 
+
+
+
 // navbar
 import Navigation from './components/avinash/avinash-jsx/Navigation';
 
@@ -26,6 +29,11 @@ import HomePage from './components/Home_page/jsx/HomePage';
 
 import Sumup from './components/Home_page/jsx/Sumup';
 import Main_home_page from './components/Home_page/jsx/Main_home_page';
+import Auth from './components/avinash/avinash-jsx/All_auth/jsx/Auth';
+import { Vendors_page } from './components/vendorPage/jsx/Vendors_page';
+
+
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 
 
@@ -36,21 +44,36 @@ function App() {
     <>
 
 
+<GoogleOAuthProvider clientId="1091938599989-sb5ugo15okjrvfr11nl5n5tihtbo7rtl.apps.googleusercontent.com">
+    <Navigation />
 
-      <Navigation />?
 
-      {/* <Main_home_page /> */}
+
+
      
-    
-    
-    {/* <Photos />  */}
-     {/* <Profile_part /> */}
-    {/* <Main_profile />  */}
 
-    
+      
 
-   
+
+
+      
+
+      
+
+
+
+      {/* <Photos />   */}  {/*this is for profile part Photos only */}
+       {/* <Profile_part />  this is for upper profile part */}
+
+    {/* <Main_profile />    this is for lower profile part   */}
+
+
+
+
       <Footer />
+
+
+      </GoogleOAuthProvider>;
 
     </>
   );

@@ -32,9 +32,7 @@ function Hrcard() {
       <div className="hrcard hrcard2">
         <div className="card_hero">
           <img className="hrcard_img hrcard_img2" src={mg4}></img>
-          {/* <div className="card_middle">
-                        <p className="card_middle-text">Location matters more then you think when it comes to capture any kind of moments</p>
-                    </div> */}
+         
         </div>
         <div className="card_content card_content2">
           <div className="hrcard_info">

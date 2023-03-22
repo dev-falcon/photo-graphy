@@ -97,7 +97,12 @@ const About_us = () => {
           </div>
         </div>
         <div className="contact-us-container">
-          <h1 className="contact-heading">CONTACT</h1>
+          <p className="contact-heading">CONTACT</p>
+
+          <form action="">
+
+
+
           <div className="formBox">
             <div className="row50">
               <div class="inputBox">
@@ -140,7 +145,13 @@ const About_us = () => {
                 ></textarea>
               </div>
             </div>
+
+            <div className="about-us-submit">
+              <input type="submit" name="Send" value='send'  />
+            </div>
           </div>
+              
+          </form>
         </div>
       </div>
     </>

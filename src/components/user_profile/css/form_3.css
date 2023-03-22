@@ -154,6 +154,42 @@
     border-radius: 5px;
 }
 
+.changing_btns_frm3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+
+.prev{
+    padding: 5px ;
+}
+
+
+.Submit_form_button_frm3{
+    background-color: black !important;
+    color: white;
+    width: 15% !important;
+    margin: 30px auto;
+   
+    font-size:18px !important ;
+    border-radius: 25px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align:center !important;
+
+}
+
+.continue{
+    background-color: white !important;
+    color: black !important;
+    padding: 5px;
+    border: 1px solid black !important;
+}
+
 
 @media screen and (min-width: 1700px) {
 
